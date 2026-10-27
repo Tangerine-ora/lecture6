@@ -57,9 +57,11 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
-  # 课程作业图片一律使用本仓库资产（assets/avatar.png 来自课堂演示仓 assets）。
+  # 课程作业图片一律使用本仓库资产，不使用 Image.network 盗链。
   assets:
     - assets/avatar.png
+    - assets/profile_avatar.png
+    - assets/cover_banner.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
