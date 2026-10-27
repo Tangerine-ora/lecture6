@@ -12,11 +12,13 @@ class LabScaffold extends StatelessWidget {
     required this.title,
     required this.intro,
     required this.children,
+    this.floatingActionButton,
   });
 
   final String title;
   final String intro;
   final List<Widget> children;
+  final Widget? floatingActionButton;
 
   @override
   Widget build(BuildContext context) {
@@ -40,6 +42,7 @@ class LabScaffold extends StatelessWidget {
           ],
         ),
       ),
+      floatingActionButton: floatingActionButton,
     );
   }
 }
@@ -102,7 +105,7 @@ class SectionHeader extends StatelessWidget {
               style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w700),
             ),
           ),
-          if (param != null) ParamChip(param!),
+          if (param != null) Flexible(child: ParamChip(param!)),
         ],
       ),
     );
@@ -124,6 +127,8 @@ class ParamChip extends StatelessWidget {
       ),
       child: Text(
         text,
+        maxLines: 1,
+        overflow: TextOverflow.ellipsis,
         style: const TextStyle(fontSize: 11, color: kPrimary, height: 1.4),
       ),
     );
@@ -174,7 +179,8 @@ class DemoPanel extends StatelessWidget {
                   style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w700),
                 ),
               ),
-              ParamChip(param),
+              const SizedBox(width: 8),
+              Flexible(child: ParamChip(param)),
             ],
           ),
           const SizedBox(height: 12),
