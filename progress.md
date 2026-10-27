@@ -217,7 +217,7 @@ void _spin() {
   取图：点「约束传递实验」→ 截图 → 在 Chrome 里按 `F12` 打开 DevTools，切到 Flutter Inspector（需以 `flutter run -d chrome` 启动，不是静态构建），用「选择组件」点中演示方块，展开 Layout Explorer 截取约束面板。
 - **【图7 6A 五个案例】**：五张。说明：EX1 粒子爆炸（金币 3）、EX2 新增一笔记录后的合计、EX3 宽屏 7 列仍固定 40、EX4 转动中与停止后指针指向的扇区、EX5 底部菜单与点赞后的「胡老师、我」。
   取图：依次进入 6A 五个页面；EX4 点「开始抽奖」后 1.3 秒截「转动中」、3.8 秒后截「停止」；EX5 点右上角「…」截菜单，再点「点赞」截点赞结果。
-- **【图8 测试与提交记录】**：两张终端截图。说明：`dart analyze lib test` 输出 `No issues found!` + `flutter test` 输出 `All tests passed!`（27 项）；`git log --oneline` 输出 11 次提交。
+- **【图8 测试与提交记录】**：两张终端截图。说明：`dart analyze lib test` 输出 `No issues found!` + `flutter test` 输出 `All tests passed!`（27 项）；`git log --oneline` 输出 12 次提交。
   取图：在 `lecture6` 目录执行 `dart analyze lib test; flutter test; git log --oneline` 后整屏截图。
 
 ## 九、自评
@@ -235,7 +235,7 @@ void _spin() {
 | 6.3 ClipPath（选做） | 完成 | 波浪头图 + 路径三方法说明 |
 | 6A 五个案例（选做） | 完成 | EX1~EX5 各自单独提交，提交信息写明病根 |
 | 进度报告 | 完成 | 本文件 + 雨课堂同文（图片单独上传） |
-| 仓库与提交 | 完成 | 11 次提交，每次提交均可编译；已 push 到 GitHub |
+| 仓库与提交 | 完成 | 12 次提交，每次提交均可编译；已 push 到 GitHub |
 
 未做/降级说明：6A 属于选做，本轮全部完成；6.3 三项也全部完成；未使用真机与模拟器，验收以 Web 为主（受环境限制）。
 
